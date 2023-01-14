@@ -1,0 +1,50 @@
+<html>
+   <body>
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
+<link href="/css/styles.css" rel="stylesheet" type="text/css"/>
+<%- include("partials/navbar"); -%>
+<!--Intro h1, followed by introductory paragraph stored in app.js (TPW)-->
+<section class="TPW">
+<h1><%=introduction%></h1>
+<p><%=introparagraph%></p>
+</section>
+<div class="image-trim">
+<img src=<%=imageURL1%> alt="">
+<p class="caption"><%=caption1%></p>
+</div>
+<hr>
+<!--Legal reforms or early life h1, followed by relevant paragraph stored in app.js (WPB)-->
+<section>
+<h1><%=heading1%></h1>
+<p><%=paragraph1%></p>
+<p><%=paragraph2%></p>
+<p><%=paragraph3%></p>
+<p><%=paragraph4%></p>
+<p><%=paragraph5%></p>
+</section>
+<!--Destruction of the Republic or relationships h1, followed by relevant paragraph stored in app.js (TPW)-->
+<section class="TPW">
+<h1><%=heading2%></h1>
+<p><%=paragraph6%></p>
+<p><%=paragraph7%></p>
+</section>
+<div class="image-trim">
+<img src=<%=imageURL2%> alt="">
+<p class="caption"><%=caption2%></p>
+</div>
+<hr>
+<!--Slavery or death of napoleon h1, followed by relevant paragraph stored in app.js (WPB)-->
+<section>
+<h1><%=heading3%></h1>
+<p><%=paragraph8%></p>
+<p><%=paragraph9%></p>
+<p><%=paragraph10%></p>
+<p><%=paragraph11%></p>
+</section>
+
+<!--Include jump to footer-->
+<%- include("partials/jumpto"); -%>
+
+
+</body>
+</html>

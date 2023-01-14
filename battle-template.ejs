@@ -1,0 +1,56 @@
+
+<html>
+    <body>
+
+    
+
+
+
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
+<link href="/css/styles.css" rel="stylesheet" type="text/css"/>
+
+<!--Include navbar header-->
+<%- include("partials/navbar"); -%>
+<!--Title of battle as an h1-->
+<section>
+<h1 class="battle-header-1">The Battle of <%=battleName%></h1>
+<div class="image-trim">
+<img src=<%=imageURL1%> alt="">
+<p class="caption"><%=caption1%></p>
+</div>
+<hr>
+</section>
+<section class="TPW">
+<h1 class="battle-info">Date:</h1><em> <%=battleDate%></em>
+<h1 class="battle-info">Belligerents:</h1><em> <%=belligerents%></em> 
+</section>
+<!--Paragraph about the context of the battle-->
+<section>
+<h1>Context</h1>
+<p><%=battleCONTEXT1%></p>
+<p><%=battleCONTEXT2%></p>
+<p><%=battleCONTEXT3%></p>
+</section>
+<div class="image-trim">
+<img src=<%=imageURL2%> alt="">
+<p class="caption"><%=caption2%></p>
+</div>
+<hr>
+<!--Paragraphs about the battle itself and how it unfolded-->
+<section class="battle-itself TPW ">
+<h1>The Battle Itself</h1>
+<p><%=BATTLETEXT1%></p>
+<p><%=BATTLETEXT2%></p>
+<p><%=BATTLETEXT3%></p>
+<p><%=BATTLETEXT4%></p>
+<p><%=BATTLETEXT5%></p>
+<p><%=BATTLETEXT6%></p>
+<p><%=BATTLETEXT7%></p>
+</section>
+
+<!--Include Jump to footer-->
+<%- include("partials/jumpto"); -%>
+
+
+</body>
+</html>

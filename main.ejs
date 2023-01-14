@@ -1,0 +1,63 @@
+
+<html>
+    <body>
+
+    
+
+
+
+<link href="/css/styles.css" rel="stylesheet" type="text/css"/>
+<!-- CSS only -->
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
+
+
+<!--Very Intro text, military genius or autocratic dictator, background image of napoleon at the st bernard pass-->
+<div class="main-intro">
+    <h1>Napoleon</h1>
+    <p>Military genius, or autocratic dictator?</p>
+</div>
+<!--Explanatory Text (Centered) with buttons to all the pages WPB-->
+<section class="main-explanatory">
+    <p>Napoleon Bonaparte is one of the greatest and most divisive figures of history. On the one hand, a supremely skilled general, whose tactics continue to inspire modern leaders, and on the other a ruthless and selfish autocrat, who crushed opposition to him by force and even reinstated slavery. Click one of the buttons below to find out more about this fascinating man, who singlehandedly conquered Europe, only to lose it all.</p>
+    <div class="main-btns-page">
+        <a class="main-page-btn main-page-btn-1" href="/military" role="button">Military</a>
+        <a class="main-page-btn main-page-btn-2" href="/domestic-policy" role="button">Domestic Policy</a>
+        <a class="main-page-btn main-page-btn-1" href="/foreign-policy" role="button">Foreign Policy</a>
+        <a class="main-page-btn main-page-btn-2" href="/personal" role="button">Personal Life</a>
+    </div>
+</section>
+<hr>
+<section class="TPW quotebar">
+<div class="napoleon-quotes w3-panel w3-leftbar w3-sand">
+  <p class="w3-xxlarge w3-serif quote">
+  <i>"<%=quote%>"</i></p>
+  <p><strong>Napoleon</strong></p>
+</div> 
+</section>
+<section class="email-section">
+   
+   
+    <form class="email-form" action="/emailer" method="post">
+        <h1 class="main-page-h1">Get in Touch!</h1>
+        <div class="submission-field">
+          <label for="floatingInput">Email Address</label>
+          <input type="email" placeholder="name@example.com" name="userEmail">
+        </div>
+        <div class="submission-field ">
+          <label class="extra-class" for="floatingPassword">First Name</label>
+          <input type="text" placeholder="First Name" name="userFirstName">
+        </div>
+        <div class="submission-field">
+          <label for="floatingPassword">Second Name</label>
+          <input type="text" placeholder="Second Name" name="userSecondName">
+        </div>
+        <button class="submission" type="submit">Send</button>
+    </form>
+</section>
+<!--TPW Napoleon Quote of the day-->
+
+<!--Contact Us form WPB-->
+<%- include("partials/superfooter"); -%>
+</body></html>
+
+
