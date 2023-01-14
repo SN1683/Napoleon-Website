@@ -6,3 +6,4 @@ It makes use of EJS templating and Express to handle the backend, and uses Nodem
 
 It also gets data from a quotes.net API, so that every time the user goes to the homepage, a random quote from Napoleon is published at the bottom.
 
+This project was built in 2021, but only uploaded recently
